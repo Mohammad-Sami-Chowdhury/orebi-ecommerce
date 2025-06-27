@@ -33,7 +33,7 @@ const Checkout = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/order/createorder",
+        "https://orebi-ecommerce-17ch.onrender.com/api/v1/order/createorder",
         orderData
       );
       alert("Order Placed Successfully!");

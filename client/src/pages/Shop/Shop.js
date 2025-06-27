@@ -18,7 +18,7 @@ const Shop = () => {
 
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/v1/product/getallproduct?page=${page}&limit=${limit}`
+        `https://orebi-ecommerce-17ch.onrender.com/api/v1/product/getallproduct?page=${page}&limit=${limit}`
       );
       console.log(res.data);
       setProducts(res.data.data);
